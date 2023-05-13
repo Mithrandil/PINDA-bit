@@ -22,6 +22,7 @@ for 60°C heated bed (accessory mounted):
 for using the saved mesh corected with a new one (before each print, no accessory mounted):
 
   BED_MESH_CALIBRATE ; mesh bed leveling
+ 
   BED_TILT_CORRECTION SAVEDMESH=MESH60 ; [60 = first_layer_bed_temperature]
 
 The accessory is also easy to print: it doesn’t require any supports or infill and it takes less than 10 minutes to print. You should use a filament that can withstand high temperatures and does not deform easily, such as PETG or ASA. These filaments are especially recommended if you use an enclosure for your printer.
