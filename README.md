@@ -16,9 +16,11 @@ The accessory is easy to use: just insert the bit into the tube and place it on 
 G-Code macro for scanning and saving the high resolution bed mesh with the accessory at a givent temperature:
 
 for 60°C heated bed (accessory mounted):
+
   CREATE_AND_SAVE_NEW_MESH S60 ; [60 = first_layer_bed_temperature]
 
 for using the saved mesh corected with a new one (before each print, no accessory mounted):
+
   BED_MESH_CALIBRATE ; mesh bed leveling
   BED_TILT_CORRECTION SAVEDMESH=MESH60 ; [60 = first_layer_bed_temperature]
 
