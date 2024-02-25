@@ -115,7 +115,7 @@ class ProfileManagerTilt(ProfileManager):
         # some values should be recalculated with the new values
         mesh_params = profile['mesh_params']
         
-        z_mesh = ZMesh(mesh_params)
+        z_mesh = ZMesh(mesh_params, prof_name)
         try:
             # create a z_mesh using the points of the tilted mesh
             z_mesh.build_mesh(probed_matrix)
